@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Accueil Restaurant la Cite </title>
+
+</head>
+
+<body>
+  <header>
+   <img src="./media/logo.jpg" alt="Logo du restaurant" width="70" height="70">
+
+
+        <h1>Restaurant La Cité</h1>
+  </header>
+
+  <nav>
+        <h2>Menu</h2>
+
+
+        <p>1.Présentation de l'équipe</p>
+
+        <ul>  
+
+            <li><a href="#chef"> Le chef</a></li>
+
+            <li><a href="#staff"> Le staff</a></li>
+
+        </ul>
+
+        <p> 2.Notre spécialité</p>
+
+        <ul>
+
+            <li>
+
+            <a href="#boeuf"> Le boeuf </a>
+
+ 
+
+                <ul>
+
+                    <li>Aux champignons</li>
+
+                    <li>Aux légues</li>
+
+                </ul>
+
+               
+
+            </li>
+
+            <li>
+
+                <a href="#poisson"> Le poisson </a>
+
+                <ul>
+
+                    <li>A la plancha</li>
+
+                    <li>A l'ancienne</li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+        <p> <a href="#reservation"> 3.Réserver une table </a> <br>
+
+        <a href="#contact"> 4.Nous contacter </a> </p>
+    </nav>
+
+    <main>
+
+        <h2> Présentation de l'équipe </h2>
+
+        <h4 id="chef"> Le chef </h4>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ligula mauris, volutpat ac viverra commodo, faucibus facilisis dui Pellentesque nisl ipsum, dapibus quis congue in, lacinia sit asc
+
+            ipsum. Duis cu dui mauris. Integer sed venenatis risus.</p>
+
+        <h4 id="staff"> Le staff </h4>
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ligula mauris, volutpat ac viverra commodo, faucibus facilisis dui. Pellentesque nisl lipsum, dapibus quis conque in, lacinia sit amet ex. Curabitur sed velit sed ligula clementum scelerisque malesuada sit amet quam. Aescan non nis
+
+            ipsum. Duis eu dui mauris. Integer sed venenatis risus </p>    
+
+    
+        <h2>Notre spécialité</h2>
+
+        <h4 id="boeuf"> Le Boeuf </h4>
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ligula mauris, volutpat ac viverra commodo, faucibus facilisis dui. <strong>Pellentesque nisl ipsum</strong>, dapibus quis congue in, lacinia sit amet ex. Curabitur sed velit sed ligula elementum scelerisque malesuada sit arnet quam. <a href="menu/menu.html#recboeuf"> <u><mark>Cliquez ici pour en savoir plus</mark></u> </a> </p>
+        <!--Pour le boeuf on envoie vers le paragraphe 'recette boeuf' dans la page menu-->
+        
+        <h4 id="poisson"> Le poisson </h4>  
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ligula mauris, volutpat ac viverra commodo, faucibus facilisis dui. <strong>Pellentesque nisl ipsum</strong>, dapibus quis congue in, lacinia sit amet ex. Curabitur sed velit sed ligula elementum scelerisque malesuada sit arnet quam. <a href="menu/menu.html"> <u><mark> Cliquez ici pour en savoir plus</mark></u> </a> </p>
+        <!--Pour le poisson et vu qu'il y'a pas de paragraphe speciale pour le poisson on envoie juste vers la page menu sans une paragraphe particuliere-->
+
+        <h2 id="reservation">Réservez votre table </h2>
+
+        <form>
+
+        <fieldset>
+
+                <legend>Informations personnelles</legend>
+
+            <p>
+
+                <label>Nom</label>
+
+            <input type="text" placeholder="Votre nom complet"><br>
+
+               
+
+                <label>email</label>
+
+            <input type="email"><br>
+
+               
+
+                <label>télephone(Obligatoire)</label>
+
+            <input type="number" required><br>
+
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Je souhaite</legend>
+
+            <p>Une table à :
+
+            <input type="radio" id="terrasse" name="fav_language" value="La terrasse">
+
+            <label for="terrasse">La terrasse</label>
+
+            <input type="radio" id="salle" name="fav_language" value="La salle">
+
+            <label for="salle">La salle</label><br>
+
+           
+
+            <label for="personne">Pour</label>
+
+        <select id="personne" name="cars">
+
+            <option value="2pers" selected>2 pers</option>
+
+            <option value="4pers">4 pers</option>
+
+            <option value="6pers">6 pers</option>
+
+            <option value="8pers">8 pers</option>
+
+        </select><br>
+
+        <label> Date </label>
+
+            <input type="date"><br>
+
+            Préférence
+
+            <input type="checkbox" id="heure1" name="heure1" value="Time">
+
+            <label for="heure1"> 18h</label>
+
+            <input type="checkbox" id="heure2" name="heure2" value="Heures">
+
+            <label for="heure2"> 20h</label><br>
+
+            </p>
+
+        </fieldset>
+
+            <input type="submit" value="soummetre">
+
+            <input type="reset" value="reinitialiser"><br>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <h3 id="contact">Nous contacter</h3>
+
+        <p> Tel: 123456789 </p>
+
+        <p> Page Facebook :  <a href="https://www.facebook.com/" target="_blank"> www.facebook.com/pageDuResto </a> </p>
+
+        <p> Equipe : <strong><mark> Anass Erraji </mark> et <mark> Bilal El archi </mark> </strong> </p>   
+    </footer>
+
+       
+
+</body>
+
+
+
+</html>
